@@ -1,6 +1,7 @@
 package view;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Font;
 
 import javax.swing.JButton;
@@ -31,9 +32,11 @@ public class CounterView extends JFrame {
         Font font = new Font("Arial",Font.BOLD,40);
         JPanel jPanel_1 = new JPanel();
         JButton jButton_up = new JButton("Up");
+        jButton_up.setForeground(Color.RED);
         jButton_up.setFont(font);
         jButton_up.addActionListener(counterListener);
         JButton jButton_Down = new JButton("Down");
+        jButton_Down.setForeground(Color.BLUE);
         jButton_Down.setFont(font);
         jButton_Down.addActionListener(counterListener);
         JButton jButton_reset = new JButton("Reset");
