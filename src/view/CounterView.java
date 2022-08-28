@@ -33,10 +33,12 @@ public class CounterView extends JFrame {
         JPanel jPanel_1 = new JPanel();
         JButton jButton_up = new JButton("Up");
         jButton_up.setForeground(Color.RED);
+        jButton_up.setBackground(Color.black);
         jButton_up.setFont(font);
         jButton_up.addActionListener(counterListener);
         JButton jButton_Down = new JButton("Down");
         jButton_Down.setForeground(Color.BLUE);
+        jButton_Down.setBackground(Color.CYAN);
         jButton_Down.setFont(font);
         jButton_Down.addActionListener(counterListener);
         JButton jButton_reset = new JButton("Reset");
